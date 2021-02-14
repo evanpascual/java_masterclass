@@ -1,4 +1,4 @@
-public class App {
+public class ByteShortIntLong {
     public static void main(String[] args) throws Exception {
         int myValue = 10000;
 
@@ -29,5 +29,16 @@ public class App {
 
         short bigShortLiteralValue = 32767;
 
+        int myTotal = (myMinIntValue / 2);
+        byte myNewByteValue = (byte) (myMinByteValue / 2);
+
+        short myNewShortValue = (short) (myMinShortValue / 2);
+
+        //Challenge 
+        byte myByte = 100;
+        short myShort = 1000;
+        int myInt = 100000;
+        long myLong = 50000l + (10l *(myByte + myShort + myInt));
+        System.out.println(myLong);
     }
 }
